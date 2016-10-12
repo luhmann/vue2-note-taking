@@ -1,6 +1,6 @@
-# Vue2-Boilerplate
+# Vue2-Note-Taking
 
-> A minimal setup for an universal vue2 app
+> A simple app to play with vue2
 
 
 ## Features
