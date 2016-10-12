@@ -4,9 +4,15 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
+  activeNote: {
+    title: 'A big red horse turne around'
+  }
 }
 
 const mutations = {
+  saveNote (state, note) {
+    state.activeNote = note
+  }
 }
 
 const actions = {

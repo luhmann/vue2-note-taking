@@ -88,9 +88,9 @@ app.get('*', (req, res) => {
 
   renderStream.on('error', err => {
     console.log(err)
-    return res
-      .status(500)
-      .send('Server Error')
+    // return res
+    //   .status(500)
+    //   .send('Server Error')
     })
 })
 
