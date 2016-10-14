@@ -16,8 +16,10 @@
 
 <script>
 import { mapState } from 'vuex'
+import * as types from '../store/types'
 
 export default {
+  name: 'editor',
   data () {
     return {
     }
@@ -31,7 +33,7 @@ export default {
         return this.activeNote.title
       },
       set (value) {
-        this.$store.commit('saveNote', value)
+        this.$store.commit(types.EDITOR_SAVE_TITLE, value)
       }
     }
   },
@@ -43,5 +45,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
-
+  textarea
+    height 10rem
 </style>

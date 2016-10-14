@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Hello from '../components/Hello'
-import Editor from '../components/Editor'
+import EditorView from '../views/EditorView'
 import Impress from '../components/Impress'
 import NotFound from '../components/NotFound'
 
@@ -19,7 +19,7 @@ export default new Router({
     {
       path: '/editor',
       name: 'editor',
-      component: Editor
+      component: EditorView
     },
     {
       path: '/impress',

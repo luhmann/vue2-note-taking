@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import * as types from './types'
+
 Vue.use(Vuex)
 
 const state = {
@@ -10,8 +12,8 @@ const state = {
 }
 
 const mutations = {
-  saveNote (state, note) {
-    state.activeNote = note
+  [types.EDITOR_SAVE_TITLE] (state, title) {
+    state.activeNote.title = title
   }
 }
 
