@@ -35,6 +35,13 @@ module.exports = {
     // (https://github.com/webpack/css-loader#sourcemaps)
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
-    cssSourceMap: false
+    cssSourceMap: false,
+    firebase: {
+      apiKey: "AIzaSyA4UvBKS4GzYzq4Cikj1J34mtWjEsgR9nk",
+      authDomain: "vue-demo-4e046.firebaseapp.com",
+      databaseURL: "https://vue-demo-4e046.firebaseio.com",
+      storageBucket: "vue-demo-4e046.appspot.com",
+      messagingSenderId: "736286954984"
+    }
   }
 }
